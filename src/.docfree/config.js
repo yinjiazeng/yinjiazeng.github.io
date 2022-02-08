@@ -43,14 +43,10 @@ module.exports = {
     to: 'https://github.com/yinjiazeng',
   }],
   pageExtra: {
-    path: 'https://github.com/yinjiazeng/blog/blob/master/docs'
+    path: 'https://github.com/yinjiazeng/yinjiazeng.github.io/tree/master/src'
   },
   footer: path.resolve(__dirname, './footer.js'),
   plugins: [
-    'emoji',
-    ['docfree-valine', {
-      appId: 'MD2yAhzrq1utFR2VxH2oU1YF-gzGzoHsz',
-      appKey: 'qbn6SClpr7xzhzHdtWNnNSYi',
-    }]
+    'emoji'
   ],
 };

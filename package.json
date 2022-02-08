@@ -17,7 +17,6 @@
   "homepage": "https://github.com/yinjiazeng/blog#readme",
   "dependencies": {
     "docfree": "^0.5.11",
-    "remark-docfree-valine": "^0.2.21",
     "remark-emoji": "^2.1.0"
   }
 }
