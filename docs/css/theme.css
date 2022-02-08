@@ -1,0 +1,3 @@
+.docfree-nav > li > :first-child:after {
+  display: none !important;
+}

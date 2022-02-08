@@ -1,0 +1,23 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "docfree dev src",
+    "build": "docfree build src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yinjiazeng/blog.git"
+  },
+  "author": "yinjiazeng",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yinjiazeng/blog/issues"
+  },
+  "homepage": "https://github.com/yinjiazeng/blog#readme",
+  "dependencies": {
+    "docfree": "^0.5.11",
+    "remark-docfree-valine": "^0.2.21",
+    "remark-emoji": "^2.1.0"
+  }
+}
