@@ -30,14 +30,37 @@ const routes = [
         "children": <Docfree.BlogEntry pageSize={30} />
       },
       {
-        "ctime": 1586950258282.7258,
-        "utime": 1586953110892.0593,
-        "pathname": "/life/",
-        "filename": "骑行去大理",
-        "ext": ".md",
-        "title": "骑行去大理",
         "path": "/骑行去大理",
-        ...require("../../life/骑行去大理.md").default
+        "children": [
+          {
+            "path": "/img",
+            "children": [
+              {
+                "path": "/",
+                "pathname": "/img/",
+                "children": <Docfree.BlogEntry pageSize={30} />
+              },
+              {
+                "path": "*",
+                "children": <Docfree.NotFound />
+              }
+            ]
+          },
+          {
+            "ctime": 1586950258282.7258,
+            "utime": 1644312164825.9236,
+            "pathname": "/life/骑行去大理/",
+            "filename": "README",
+            "ext": ".md",
+            "title": "README",
+            "path": "/",
+            ...require("../../life/骑行去大理/README.md").default
+          },
+          {
+            "path": "*",
+            "children": <Docfree.NotFound />
+          }
+        ]
       },
       {
         "path": "*",
@@ -54,7 +77,7 @@ const generateData = (rawData, data = []) => {
       const { children, render, effects, reducers, onInit, onChange, ...rest } = route;
       if (Array.isArray(children)) {
         data = generateData(children, data);
-      } else if (route.path !== '/' && route.title) {
+      } else if (route.title) {
         data.push(rest);
       }
     }
@@ -73,13 +96,12 @@ const dataSource = generateData(routes)
   return 0;
 });
 
-const getList = (pathname, { query }) => {
-  const prePath = query._ || pathname;
+const getList = (pathname) => {
   const list = [];
 
-  dataSource.forEach(({ title, pathname: pre, filename, ctime }) => {
-    if (pre.startsWith(prePath)) {
-      list.push({ to: pre + filename + '?_=' + prePath, text: title, ctime });
+  dataSource.forEach(({ title, pathname: pre, path, ctime }) => {
+    if (pre.startsWith(pathname)) {
+      list.push({ to: (pre + path).replace(/\/+/g, '/'), text: title, ctime });
     }
   });
 
@@ -148,7 +170,7 @@ nuomi.config({
 
       payload.sidebarMenus = routeData.computedSidebarMenus || [];
 
-      const listSource = getList(pathname, location) || [];
+      const listSource = getList(pathname) || [];
 
       this.dispatch({
         type: '_updateState',

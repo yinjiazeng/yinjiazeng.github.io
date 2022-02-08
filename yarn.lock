@@ -2936,10 +2936,10 @@ docfree-components@^0.5.10:
     docfree-utils "^0.5.9"
     prop-types "^15.7.2"
 
-docfree-generate@^0.5.11:
-  version "0.5.11"
-  resolved "https://registry.npmjs.org/docfree-generate/-/docfree-generate-0.5.11.tgz#4e5a8c7e8087e99eafa65f7d5cb550b204110000"
-  integrity sha512-HG4dfaoE9Fj0PEFvIk3l311RMJG3QMR5v00dJ3BMOrrL5a+7bqZ6fPi6QjAAlXfKi+lu4SyVy5hdtoW936W3EQ==
+docfree-generate@^0.5.12:
+  version "0.5.12"
+  resolved "https://registry.npmjs.org/docfree-generate/-/docfree-generate-0.5.12.tgz#c486b20177412dd0cb66b848e7f1eb1a7589f1e4"
+  integrity sha512-l/Qt5UYbF5TNiXm0OvrHZ64gHTwBudowD/QosCEfTc2qXc0KYvvlMKjuRfguwIXPnoRuFnMSBCpLIBbQX8Ir5A==
   dependencies:
     chokidar "^3.3.1"
     docfree-utils "^0.5.9"
@@ -3038,13 +3038,13 @@ docfree-webpack@^0.5.10:
     webpack-dev-server "^3.10.3"
     webpack-merge "^4.2.2"
 
-docfree@^0.5.11:
-  version "0.5.11"
-  resolved "https://registry.npmjs.org/docfree/-/docfree-0.5.11.tgz#dc84d13bb04095c963eb7f99f52e4e636b63b1a4"
-  integrity sha512-g5m0Bwxi9vvwFHnO7RQ+hpDa9xD2M/YlzH1weyBFYrsY8tEpCmkFiJnUTK/JXU3lw/NzfyZG3MxkkfYGgWEnmw==
+docfree@^0.5.12:
+  version "0.5.12"
+  resolved "https://registry.npmjs.org/docfree/-/docfree-0.5.12.tgz#197c979d0c1ec6698c245ff99846f9c96c4c18ee"
+  integrity sha512-xgjMhkTRlM4TJAr6RzrQOz+aOwi3s0bWHXv0e+LaiUNK+V45aQ8Escy2EpcfCjo9iuM0rSOkYsaNcOPxf1a6GQ==
   dependencies:
     commander "^4.1.1"
-    docfree-generate "^0.5.11"
+    docfree-generate "^0.5.12"
     docfree-template "^0.5.0"
     docfree-utils "^0.5.9"
     docfree-webpack "^0.5.10"
