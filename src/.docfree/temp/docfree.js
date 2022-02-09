@@ -12,14 +12,23 @@ const routes = [
     "children": <Docfree.BlogEntry pageSize={30} />
   },
   {
-    "ctime": 1586864388295.826,
-    "utime": 1589189078756.1216,
-    "pathname": "/",
-    "filename": "about",
-    "ext": ".md",
-    "title": "about",
     "path": "/about",
-    ...require("../../about.md").default
+    "children": [
+      {
+        "ctime": 1586864388295.826,
+        "utime": 1644377529095.2322,
+        "pathname": "/about/",
+        "filename": "readme",
+        "ext": ".md",
+        "title": "readme",
+        "path": "/",
+        ...require("../../about/readme.md").default
+      },
+      {
+        "path": "*",
+        "children": <Docfree.NotFound />
+      }
+    ]
   },
   {
     "path": "/life",
