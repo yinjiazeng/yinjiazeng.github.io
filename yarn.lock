@@ -2944,10 +2944,10 @@ docfree-generate@^0.5.13:
     chokidar "^3.3.1"
     docfree-utils "^0.5.9"
 
-docfree-loader@^0.5.9:
-  version "0.5.9"
-  resolved "https://registry.npmjs.org/docfree-loader/-/docfree-loader-0.5.9.tgz#2654a7bc97129ca95c33234c199435d9b51b1ddd"
-  integrity sha512-FqfAD9gXZLQIdCvX3Yw46/8WB4uACuuiTNY6QvKRsVmkszY/hBs9MmMtzHntaC1aapMbuvcE74OO0tPVFdUinw==
+docfree-loader@^0.5.14:
+  version "0.5.14"
+  resolved "https://registry.npmjs.org/docfree-loader/-/docfree-loader-0.5.14.tgz#579caf950b1c78cb124905efd994145e1ca863b1"
+  integrity sha512-yr7o/qQB+RsU02N0XHt0WLwJfmMlI1eWmKUm0NakBSp0+tsiNY0DJLBV9y5n1g4yz7azfRgNClkFKli3Lj3pIw==
   dependencies:
     "@mdx-js/mdx" "^1.5.7"
     docfree-utils "^0.5.9"
@@ -2998,10 +2998,10 @@ docfree-utils@^0.5.9:
     unist-util-visit "^2.0.2"
     vfile "^4.1.0"
 
-docfree-webpack@^0.5.10:
-  version "0.5.10"
-  resolved "https://registry.npmjs.org/docfree-webpack/-/docfree-webpack-0.5.10.tgz#2bc168a09fd6285fb6a9349d8e41fbd9ae8817d1"
-  integrity sha512-iWZnZMnK3b4TF0FAXWjCL0Mrb979y+nrLcQKaS1Mfpv5YMe2B+27O/lQx6xiXWYGO44IaX50amYtaXG7ELp91g==
+docfree-webpack@^0.5.14:
+  version "0.5.14"
+  resolved "https://registry.npmjs.org/docfree-webpack/-/docfree-webpack-0.5.14.tgz#2b380710f7c095fb43dc5a0eba56568455d0e649"
+  integrity sha512-GIqAM0LmIibk6lEJAYv+jSl8yGhCLvv1/shY1tLJlt+qx7T/UidVkqXC8IP5PsPIKnIKEEtWJOofej1nfO/qNQ==
   dependencies:
     "@babel/polyfill" "^7.8.7"
     antd "3.x"
@@ -3015,7 +3015,7 @@ docfree-webpack@^0.5.10:
     date-format "^3.0.0"
     docfree-component-loader "^0.5.9"
     docfree-components "^0.5.10"
-    docfree-loader "^0.5.9"
+    docfree-loader "^0.5.14"
     docfree-prop-types "^0.5.9"
     docfree-utils "^0.5.9"
     file-loader "^6.0.0"
@@ -3038,16 +3038,16 @@ docfree-webpack@^0.5.10:
     webpack-dev-server "^3.10.3"
     webpack-merge "^4.2.2"
 
-docfree@^0.5.13:
-  version "0.5.13"
-  resolved "https://registry.npmjs.org/docfree/-/docfree-0.5.13.tgz#9ab860f30b7def11792c39c7668529df8c30f5cd"
-  integrity sha512-uwmYcGqRUwOCnmmtyeNV5WlKkLtdlU9UChSkMlp9mGbkmqrmWCNgIKxD+gq55obV4NPb+jfpjwLyL40gD9ofYA==
+docfree@^0.5.14:
+  version "0.5.14"
+  resolved "https://registry.npmjs.org/docfree/-/docfree-0.5.14.tgz#4f9b0809d4458352c54f6d9c7850b962cd456f65"
+  integrity sha512-+pWdmyL3TWvjoZO9taLiDBb6HPsVhZ14zvnrMQmIOFKkGeuRlHbDG19Lrd0ucf5tpIyO5r+XuzSi5lkOmUXTZQ==
   dependencies:
     commander "^4.1.1"
     docfree-generate "^0.5.13"
     docfree-template "^0.5.0"
     docfree-utils "^0.5.9"
-    docfree-webpack "^0.5.10"
+    docfree-webpack "^0.5.14"
 
 dom-align@^1.7.0:
   version "1.11.1"

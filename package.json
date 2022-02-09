@@ -16,7 +16,7 @@
   },
   "homepage": "https://github.com/yinjiazeng/blog#readme",
   "dependencies": {
-    "docfree": "^0.5.13",
+    "docfree": "^0.5.14",
     "remark-emoji": "^2.1.0"
   }
 }
