@@ -62,6 +62,53 @@ const routes = [
         "children": <Docfree.NotFound />
       }
     ]
+  },
+  {
+    "path": "/tech",
+    "children": [
+      {
+        "path": "/",
+        "pathname": "/tech/",
+        "children": <Docfree.BlogEntry pageSize={30} />
+      },
+      {
+        "path": "/uniapp",
+        "children": [
+          {
+            "path": "/",
+            "pathname": "/tech/uniapp/",
+            "children": <Docfree.BlogEntry pageSize={30} />
+          },
+          {
+            "path": "/制作启动图",
+            "children": [
+              {
+                "ctime": 1644393431275.546,
+                "utime": 1644394570544.7024,
+                "pathname": "/tech/uniapp/制作启动图/",
+                "filename": "readme",
+                "ext": ".md",
+                "title": "readme",
+                "path": "/",
+                ...require("../../tech/uniapp/制作启动图/readme.md").default
+              },
+              {
+                "path": "*",
+                "children": <Docfree.NotFound />
+              }
+            ]
+          },
+          {
+            "path": "*",
+            "children": <Docfree.NotFound />
+          }
+        ]
+      },
+      {
+        "path": "*",
+        "children": <Docfree.NotFound />
+      }
+    ]
   }
 ];
 const documentTitle = '前端阿牛の博客';
