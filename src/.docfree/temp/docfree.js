@@ -33,12 +33,55 @@ const routes = [
         "path": "/骑行去大理",
         "children": [
           {
-            "path": "/img",
+            "ctime": 1586950258282.7258,
+            "utime": 1644374018340.916,
+            "pathname": "/life/骑行去大理/",
+            "filename": "readme",
+            "ext": ".md",
+            "title": "readme",
+            "path": "/",
+            ...require("../../life/骑行去大理/readme.md").default
+          },
+          {
+            "path": "*",
+            "children": <Docfree.NotFound />
+          }
+        ]
+      },
+      {
+        "path": "*",
+        "children": <Docfree.NotFound />
+      }
+    ]
+  },
+  {
+    "path": "/tech",
+    "children": [
+      {
+        "path": "/",
+        "pathname": "/tech/",
+        "children": <Docfree.BlogEntry pageSize={30} />
+      },
+      {
+        "path": "/electron",
+        "children": [
+          {
+            "path": "/",
+            "pathname": "/tech/electron/",
+            "children": <Docfree.BlogEntry pageSize={30} />
+          },
+          {
+            "path": "/自定义安装路径",
             "children": [
               {
+                "ctime": 1644313687254.278,
+                "utime": 1644373879456.548,
+                "pathname": "/tech/electron/自定义安装路径/",
+                "filename": "readme",
+                "ext": ".md",
+                "title": "readme",
                 "path": "/",
-                "pathname": "/img/",
-                "children": <Docfree.BlogEntry pageSize={30} />
+                ...require("../../tech/electron/自定义安装路径/readme.md").default
               },
               {
                 "path": "*",
@@ -47,14 +90,37 @@ const routes = [
             ]
           },
           {
-            "ctime": 1586950258282.7258,
-            "utime": 1644312164825.9236,
-            "pathname": "/life/骑行去大理/",
-            "filename": "README",
-            "ext": ".md",
-            "title": "README",
+            "path": "*",
+            "children": <Docfree.NotFound />
+          }
+        ]
+      },
+      {
+        "path": "/uniapp",
+        "children": [
+          {
             "path": "/",
-            ...require("../../life/骑行去大理/README.md").default
+            "pathname": "/tech/uniapp/",
+            "children": <Docfree.BlogEntry pageSize={30} />
+          },
+          {
+            "path": "/证书申请",
+            "children": [
+              {
+                "ctime": 1644313490670.1565,
+                "utime": 1644373865319.1921,
+                "pathname": "/tech/uniapp/证书申请/",
+                "filename": "readme",
+                "ext": ".md",
+                "title": "readme",
+                "path": "/",
+                ...require("../../tech/uniapp/证书申请/readme.md").default
+              },
+              {
+                "path": "*",
+                "children": <Docfree.NotFound />
+              }
+            ]
           },
           {
             "path": "*",
@@ -219,54 +285,16 @@ nuomi.config({
 
 const nav = getNavMenus([
   {
-    "text": "前端",
-    "to": "/front-end",
+    "text": "技术",
+    "to": "/tech",
     "menus": [
       {
-        "text": "Javascript",
-        "to": "/front-end/Javascript"
+        "text": "uniapp",
+        "to": "/tech/uniapp"
       },
       {
-        "text": "Typescript",
-        "to": "/front-end/Typescript"
-      },
-      {
-        "text": "React",
-        "to": "/front-end/React"
-      },
-      {
-        "text": "Vue",
-        "to": "/front-end/Vue"
-      },
-      {
-        "text": "JQuery",
-        "to": "/front-end/JQuery"
-      },
-      {
-        "text": "Webpack",
-        "to": "/front-end/Webpack"
-      },
-      {
-        "text": "CSS",
-        "to": "/front-end/CSS"
-      },
-      {
-        "text": "HTML",
-        "to": "/front-end/HTML"
-      }
-    ]
-  },
-  {
-    "text": "后端",
-    "to": "/back-end",
-    "menus": [
-      {
-        "text": "Nginx",
-        "to": "/back-end/Nginx"
-      },
-      {
-        "text": "Nodejs",
-        "to": "/back-end/Nodejs"
+        "text": "electron",
+        "to": "/tech/electron"
       }
     ]
   },

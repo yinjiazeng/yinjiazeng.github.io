@@ -1,37 +1,20 @@
 const path = require('path');
-const FrontEndPath = '/front-end';
-const BackEndPath = '/back-end';
+const techPath = '/tech';
 
 module.exports = {
   title: '前端阿牛の博客',
   mode: 'blog',
   dest: '../../docs',
   nav: [{
-    text: '前端',
-    to: FrontEndPath,
+    text: '技术',
+    to: techPath,
     menus: [
-      'Javascript', 
-      'Typescript', 
-      'React', 
-      'Vue', 
-      'JQuery', 
-      'Webpack', 
-      'CSS', 
-      'HTML',
+      'uniapp',
+      'electron',
     ].map((item) => ({
       text: item,
-      to: `${FrontEndPath}/${item}`,
+      to: `${techPath}/${item}`,
     }))
-  }, {
-    text: '后端',
-    to: BackEndPath,
-    menus: [
-      'Nginx',
-      'Nodejs',
-    ].map((item) => ({
-      text: item,
-      to: `${BackEndPath}/${item}`,
-    })),
   }, {
     text: '生活',
     to: '/life',
