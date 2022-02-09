@@ -62,86 +62,6 @@ const routes = [
         "children": <Docfree.NotFound />
       }
     ]
-  },
-  {
-    "path": "/tech",
-    "children": [
-      {
-        "path": "/",
-        "pathname": "/tech/",
-        "children": <Docfree.BlogEntry pageSize={30} />
-      },
-      {
-        "path": "/electron",
-        "children": [
-          {
-            "path": "/",
-            "pathname": "/tech/electron/",
-            "children": <Docfree.BlogEntry pageSize={30} />
-          },
-          {
-            "path": "/自定义安装路径",
-            "children": [
-              {
-                "ctime": 1644313687254.278,
-                "utime": 1644373879456.548,
-                "pathname": "/tech/electron/自定义安装路径/",
-                "filename": "readme",
-                "ext": ".md",
-                "title": "readme",
-                "path": "/",
-                ...require("../../tech/electron/自定义安装路径/readme.md").default
-              },
-              {
-                "path": "*",
-                "children": <Docfree.NotFound />
-              }
-            ]
-          },
-          {
-            "path": "*",
-            "children": <Docfree.NotFound />
-          }
-        ]
-      },
-      {
-        "path": "/uniapp",
-        "children": [
-          {
-            "path": "/",
-            "pathname": "/tech/uniapp/",
-            "children": <Docfree.BlogEntry pageSize={30} />
-          },
-          {
-            "path": "/证书申请",
-            "children": [
-              {
-                "ctime": 1644313490670.1565,
-                "utime": 1644373865319.1921,
-                "pathname": "/tech/uniapp/证书申请/",
-                "filename": "readme",
-                "ext": ".md",
-                "title": "readme",
-                "path": "/",
-                ...require("../../tech/uniapp/证书申请/readme.md").default
-              },
-              {
-                "path": "*",
-                "children": <Docfree.NotFound />
-              }
-            ]
-          },
-          {
-            "path": "*",
-            "children": <Docfree.NotFound />
-          }
-        ]
-      },
-      {
-        "path": "*",
-        "children": <Docfree.NotFound />
-      }
-    ]
   }
 ];
 const documentTitle = '前端阿牛の博客';
@@ -298,12 +218,20 @@ const nav = getNavMenus([
     "to": "/tech",
     "menus": [
       {
-        "text": "uniapp",
-        "to": "/tech/uniapp"
+        "text": "JavaScript",
+        "to": "/tech/javascript"
       },
       {
-        "text": "electron",
+        "text": "小程序",
+        "to": "/tech/miniprogram"
+      },
+      {
+        "text": "Electron",
         "to": "/tech/electron"
+      },
+      {
+        "text": "Uniapp",
+        "to": "/tech/uniapp"
       }
     ]
   },

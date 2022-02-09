@@ -1,5 +1,4 @@
 const path = require('path');
-const techPath = '/tech';
 
 module.exports = {
   title: '前端阿牛の博客',
@@ -7,14 +6,20 @@ module.exports = {
   dest: '../../docs',
   nav: [{
     text: '技术',
-    to: techPath,
-    menus: [
-      'uniapp',
-      'electron',
-    ].map((item) => ({
-      text: item,
-      to: `${techPath}/${item}`,
-    }))
+    to: '/tech',
+    menus: [{
+      text: 'JavaScript',
+      to: '/tech/javascript',
+    }, {
+      text: '小程序',
+      to: '/tech/miniprogram',
+    }, {
+      text: 'Electron',
+      to: '/tech/electron',
+    }, {
+      text: 'Uniapp',
+      to: '/tech/uniapp',
+    }]
   }, {
     text: '生活',
     to: '/life',
