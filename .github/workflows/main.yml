@@ -36,7 +36,7 @@ jobs:
       - name: Build Docs
         run: yarn build
         
-      - name: Deploy
+      - name: Deploy Docs
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
