@@ -23,6 +23,7 @@
 `Uniapp`
 `小程序`
 `Java`
+`Objective-C`
 
 ## 个人优势
 

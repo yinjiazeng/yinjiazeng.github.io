@@ -42,4 +42,5 @@ jobs:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           BRANCH: docs
           FOLDER: docs/.docfree/dist
+          CLEAN: false
           
