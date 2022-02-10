@@ -30,7 +30,7 @@ module.exports = {
     to: 'https://github.com/yinjiazeng',
   }],
   pageExtra: {
-    path: 'https://github.com/yinjiazeng/yinjiazeng.github.io/tree/master/src'
+    path: 'https://github.com/yinjiazeng/yinjiazeng.github.io/tree/master/docs'
   },
   footer: path.resolve(__dirname, './footer.js'),
   plugins: [
