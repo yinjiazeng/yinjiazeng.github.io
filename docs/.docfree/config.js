@@ -3,7 +3,6 @@ const path = require('path');
 module.exports = {
   title: '前端阿牛の博客',
   mode: 'blog',
-  dest: '../../docs',
   nav: [{
     text: '技术',
     to: '/tech',

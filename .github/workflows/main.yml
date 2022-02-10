@@ -41,5 +41,5 @@ jobs:
         with:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           BRANCH: docs
-          FOLDER: docs
+          FOLDER: docs/.docfree/dist
           

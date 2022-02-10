@@ -2,8 +2,8 @@
   "name": "blog",
   "version": "1.0.0",
   "scripts": {
-    "dev": "docfree dev src",
-    "build": "docfree build src"
+    "dev": "docfree dev docs",
+    "build": "docfree build docs"
   },
   "repository": {
     "type": "git",
