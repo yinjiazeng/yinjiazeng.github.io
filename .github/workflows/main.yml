@@ -30,16 +30,20 @@ jobs:
         with:
           node-version: "16"
           
-      - name: Install Dependencies
-        run: yarn install
+      #- name: Install Dependencies
+      #  run: yarn install
 
-      - name: Build Docs
-        run: yarn build
+      #- name: Build Docs
+      #  run: yarn build
         
       - name: Deploy Docs
         uses: JamesIves/github-pages-deploy-action@releases/v4
         with:
-          branch: docs
-          folder: docs/.docfree/dist
+          #token: ${{ secrets.ACCESS_TOKEN }}
+          repository-name: yinjiazeng/blog
+          branch: master
+          folder: docs/.docfree/temp
+          #branch: docs
+          #folder: docs/.docfree/dist
           clean: false
           
