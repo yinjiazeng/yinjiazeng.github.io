@@ -18,7 +18,7 @@ jobs:
       - name: Use Nodejs
         uses: actions/setup-node@v1
         with:
-          node-version: "16"
+          node-version: 16
           
       #- name: Install Dependencies
       #  run: yarn install
@@ -29,11 +29,7 @@ jobs:
       - name: Deploy Docs
         uses: JamesIves/github-pages-deploy-action@releases/v4
         with:
-          token: ${{ secrets.ACCESS_TOKEN }}
-          repository-name: yinjiazeng/blog
-          branch: master
-          folder: docs/.docfree/temp
-          #branch: docs
-          #folder: docs/.docfree/dist
+          branch: docs
+          folder: docs/.docfree/dist
           clean: false
           
