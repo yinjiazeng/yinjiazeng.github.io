@@ -20,11 +20,11 @@ jobs:
         with:
           node-version: 16
           
-      #- name: Install Dependencies
-      #  run: yarn install
+      - name: Install Dependencies
+        run: yarn install
 
-      #- name: Build Docs
-      #  run: yarn build
+      - name: Build Docs
+        run: yarn build
         
       - name: Deploy Docs
         uses: JamesIves/github-pages-deploy-action@releases/v4
