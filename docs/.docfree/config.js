@@ -18,6 +18,9 @@ module.exports = {
     }, {
       text: 'Uniapp',
       to: '/tech/uniapp',
+    }, {
+      text: 'Github',
+      to: '/tech/github',
     }]
   }, {
     text: '生活',

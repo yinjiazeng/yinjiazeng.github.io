@@ -72,6 +72,39 @@ const routes = [
         "children": <Docfree.BlogEntry pageSize={30} />
       },
       {
+        "path": "/github",
+        "children": [
+          {
+            "path": "/",
+            "pathname": "/tech/github/",
+            "children": <Docfree.BlogEntry pageSize={30} />
+          },
+          {
+            "path": "/自动化部署静态站点",
+            "children": [
+              {
+                "ctime": 1644548608007.3862,
+                "utime": 1644549085872.4597,
+                "pathname": "/tech/github/自动化部署静态站点/",
+                "filename": "readme",
+                "ext": ".md",
+                "title": "readme",
+                "path": "/",
+                ...require("../../tech/github/自动化部署静态站点/readme.md").default
+              },
+              {
+                "path": "*",
+                "children": <Docfree.NotFound />
+              }
+            ]
+          },
+          {
+            "path": "*",
+            "children": <Docfree.NotFound />
+          }
+        ]
+      },
+      {
         "path": "/uniapp",
         "children": [
           {
@@ -279,6 +312,10 @@ const nav = getNavMenus([
       {
         "text": "Uniapp",
         "to": "/tech/uniapp"
+      },
+      {
+        "text": "Github",
+        "to": "/tech/github"
       }
     ]
   },
