@@ -5,6 +5,8 @@ import * as Docfree from 'docfree-components';
 import 'docfree-components/lib/style/lang.less';
 import footer from '../footer.js';
 
+
+
 const routes = [
   {
     "path": "/",
@@ -22,7 +24,13 @@ const routes = [
         "ext": ".md",
         "title": "readme",
         "path": "/",
-        ...require("../../about/readme.md").default
+        ...require("../../about/readme.md?getTitleInfo=1").default,
+    async: (cb) => {
+      require.ensure([], (require) => {
+        cb(require("../../about/readme.md").default);
+      })
+    }
+    
       },
       {
         "path": "*",
@@ -49,7 +57,13 @@ const routes = [
             "ext": ".md",
             "title": "readme",
             "path": "/",
-            ...require("../../life/骑行去大理/readme.md").default
+            ...require("../../life/骑行去大理/readme.md?getTitleInfo=1").default,
+    async: (cb) => {
+      require.ensure([], (require) => {
+        cb(require("../../life/骑行去大理/readme.md").default);
+      })
+    }
+    
           },
           {
             "path": "*",
@@ -84,13 +98,19 @@ const routes = [
             "children": [
               {
                 "ctime": 1644548608007.3862,
-                "utime": 1644549085872.4597,
+                "utime": 1644564749755.9866,
                 "pathname": "/tech/github/自动化部署静态站点/",
                 "filename": "readme",
                 "ext": ".md",
                 "title": "readme",
                 "path": "/",
-                ...require("../../tech/github/自动化部署静态站点/readme.md").default
+                ...require("../../tech/github/自动化部署静态站点/readme.md?getTitleInfo=1").default,
+    async: (cb) => {
+      require.ensure([], (require) => {
+        cb(require("../../tech/github/自动化部署静态站点/readme.md").default);
+      })
+    }
+    
               },
               {
                 "path": "*",
@@ -123,7 +143,13 @@ const routes = [
                 "ext": ".md",
                 "title": "readme",
                 "path": "/",
-                ...require("../../tech/uniapp/制作启动图/readme.md").default
+                ...require("../../tech/uniapp/制作启动图/readme.md?getTitleInfo=1").default,
+    async: (cb) => {
+      require.ensure([], (require) => {
+        cb(require("../../tech/uniapp/制作启动图/readme.md").default);
+      })
+    }
+    
               },
               {
                 "path": "*",
