@@ -3259,10 +3259,10 @@ docfree-webpack@^0.6.3:
     webpack-dev-server "^3.10.3"
     webpack-merge "^4.2.2"
 
-docfree@^0.6.3:
-  version "0.6.3"
-  resolved "https://registry.npmjs.org/docfree/-/docfree-0.6.3.tgz#eab68c5d345b6f8ef6ecab9eef133662a1dcc23c"
-  integrity sha512-M5My4M3yjAFFKhnizHIPPkBXe1eF7hjYjXjjDwtzsm94tXT8/8trE1wHh0X1aHwfgBZQDU4qVx9Tqh7RBcO21g==
+docfree@^0.6.4:
+  version "0.6.4"
+  resolved "https://registry.npmjs.org/docfree/-/docfree-0.6.4.tgz#89837f7eddda6f72b1e736e05ccd998a16cb4bf0"
+  integrity sha512-m9o6q+flmsmk9U6ZY+MXfF/bjZwZyc1HUF4AqQ1orCSvDkIhXUQrTZlEL8SFrLrmGzmqNki0nIFf+RQfcUCM8Q==
   dependencies:
     commander "^4.1.1"
     docfree-generate "^0.6.0"
