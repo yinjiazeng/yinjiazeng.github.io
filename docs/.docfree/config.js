@@ -7,22 +7,6 @@ module.exports = {
   nav: [{
     text: '技术',
     to: '/tech',
-    menus: [{
-      text: 'JavaScript',
-      to: '/tech/javascript',
-    }, {
-      text: '小程序',
-      to: '/tech/miniprogram',
-    }, {
-      text: 'Electron',
-      to: '/tech/electron',
-    }, {
-      text: 'Uniapp',
-      to: '/tech/uniapp',
-    }, {
-      text: 'Github',
-      to: '/tech/github',
-    }]
   }, {
     text: '生活',
     to: '/life',
@@ -38,6 +22,10 @@ module.exports = {
   },
   footer: path.resolve(__dirname, './footer.js'),
   plugins: [
-    'emoji'
+    'emoji',
+    ['docfree-valine', {
+      appId: 'MD2yAhzrq1utFR2VxH2oU1YF-gzGzoHsz',
+      appKey: 'qbn6SClpr7xzhzHdtWNnNSYi',
+    }]
   ],
 };

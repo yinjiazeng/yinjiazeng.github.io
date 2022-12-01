@@ -1,5 +1,5 @@
 ---
-title: Github自动化部署静态站点
+title: github自动化部署静态站点
 ---
 
 ## 介绍
