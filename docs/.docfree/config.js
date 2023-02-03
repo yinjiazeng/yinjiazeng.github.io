@@ -8,8 +8,14 @@ module.exports = {
     text: '技术',
     to: '/tech',
   }, {
+    text: '周刊',
+    to: '/weekly',
+  }, {
     text: '生活',
     to: '/life',
+  }, {
+    text: '电子书',
+    to: '/ebook',
   }, {
     text: '关于',
     to: '/about',

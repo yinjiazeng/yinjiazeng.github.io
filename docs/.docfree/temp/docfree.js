@@ -39,12 +39,62 @@ const routes = [
     ]
   },
   {
+    "path": "/ebook",
+    "children": [
+      {
+        "ctime": 1674269015000,
+        "utime": 1675398663596.8335,
+        "pathname": "/ebook/",
+        "filename": "readme",
+        "ext": ".md",
+        "title": "readme",
+        "path": "/",
+        ...require("../../ebook/readme.md?getTitleInfo=1").default,
+    async: (cb) => {
+      require.ensure([], (require) => {
+        cb(require("../../ebook/readme.md").default);
+      })
+    }
+    
+      },
+      {
+        "path": "*",
+        "children": <Docfree.NotFound />
+      }
+    ]
+  },
+  {
     "path": "/life",
     "children": [
       {
         "path": "/",
         "pathname": "/life/",
         "children": <Docfree.BlogEntry pageSize={30} />
+      },
+      {
+        "path": "/2023",
+        "children": [
+          {
+            "ctime": 1675390364048.1646,
+            "utime": 1675394821481.863,
+            "pathname": "/life/2023/",
+            "filename": "readme",
+            "ext": ".md",
+            "title": "readme",
+            "path": "/",
+            ...require("../../life/2023/readme.md?getTitleInfo=1").default,
+    async: (cb) => {
+      require.ensure([], (require) => {
+        cb(require("../../life/2023/readme.md").default);
+      })
+    }
+    
+          },
+          {
+            "path": "*",
+            "children": <Docfree.NotFound />
+          }
+        ]
       },
       {
         "path": "/骑行去大理",
@@ -165,7 +215,7 @@ const routes = [
         "children": [
           {
             "ctime": 1669887769245.6152,
-            "utime": 1669879767013.1765,
+            "utime": 1669887776366.7422,
             "pathname": "/tech/uniapp常见问题汇总/",
             "filename": "readme",
             "ext": ".md",
@@ -186,120 +236,34 @@ const routes = [
         ]
       },
       {
-        "path": "/uniapp接入三方支付",
-        "children": [
-          {
-            "ctime": 1669879696177.2366,
-            "utime": 1669879745424.0337,
-            "pathname": "/tech/uniapp接入三方支付/",
-            "filename": "readme",
-            "ext": ".md",
-            "title": "readme",
-            "path": "/",
-            ...require("../../tech/uniapp接入三方支付/readme.md?getTitleInfo=1").default,
-    async: (cb) => {
-      require.ensure([], (require) => {
-        cb(require("../../tech/uniapp接入三方支付/readme.md").default);
-      })
-    }
-    
-          },
-          {
-            "path": "*",
-            "children": <Docfree.NotFound />
-          }
-        ]
+        "path": "*",
+        "children": <Docfree.NotFound />
+      }
+    ]
+  },
+  {
+    "path": "/weekly",
+    "children": [
+      {
+        "path": "/",
+        "pathname": "/weekly/",
+        "children": <Docfree.BlogEntry pageSize={30} />
       },
       {
-        "path": "/uniapp接入三方登录",
+        "path": "/1",
         "children": [
           {
-            "ctime": 1669879698327.261,
-            "utime": 1669879767013.1765,
-            "pathname": "/tech/uniapp接入三方登录/",
+            "ctime": 1675390246558.9229,
+            "utime": 1675390264129.9915,
+            "pathname": "/weekly/1/",
             "filename": "readme",
             "ext": ".md",
             "title": "readme",
             "path": "/",
-            ...require("../../tech/uniapp接入三方登录/readme.md?getTitleInfo=1").default,
+            ...require("../../weekly/1/readme.md?getTitleInfo=1").default,
     async: (cb) => {
       require.ensure([], (require) => {
-        cb(require("../../tech/uniapp接入三方登录/readme.md").default);
-      })
-    }
-    
-          },
-          {
-            "path": "*",
-            "children": <Docfree.NotFound />
-          }
-        ]
-      },
-      {
-        "path": "/uniapp接入消息通知",
-        "children": [
-          {
-            "ctime": 1669879295213.0193,
-            "utime": 1669879668338.8198,
-            "pathname": "/tech/uniapp接入消息通知/",
-            "filename": "readme",
-            "ext": ".md",
-            "title": "readme",
-            "path": "/",
-            ...require("../../tech/uniapp接入消息通知/readme.md?getTitleInfo=1").default,
-    async: (cb) => {
-      require.ensure([], (require) => {
-        cb(require("../../tech/uniapp接入消息通知/readme.md").default);
-      })
-    }
-    
-          },
-          {
-            "path": "*",
-            "children": <Docfree.NotFound />
-          }
-        ]
-      },
-      {
-        "path": "/uniapp自定义启动页",
-        "children": [
-          {
-            "ctime": 1669877507202.7507,
-            "utime": 1669877567618.2888,
-            "pathname": "/tech/uniapp自定义启动页/",
-            "filename": "readme",
-            "ext": ".md",
-            "title": "readme",
-            "path": "/",
-            ...require("../../tech/uniapp自定义启动页/readme.md?getTitleInfo=1").default,
-    async: (cb) => {
-      require.ensure([], (require) => {
-        cb(require("../../tech/uniapp自定义启动页/readme.md").default);
-      })
-    }
-    
-          },
-          {
-            "path": "*",
-            "children": <Docfree.NotFound />
-          }
-        ]
-      },
-      {
-        "path": "/小程序音视频通话",
-        "children": [
-          {
-            "ctime": 1669887675304.3252,
-            "utime": 1669887680331.4778,
-            "pathname": "/tech/小程序音视频通话/",
-            "filename": "readme",
-            "ext": ".md",
-            "title": "readme",
-            "path": "/",
-            ...require("../../tech/小程序音视频通话/readme.md?getTitleInfo=1").default,
-    async: (cb) => {
-      require.ensure([], (require) => {
-        cb(require("../../tech/小程序音视频通话/readme.md").default);
+        cb(require("../../weekly/1/readme.md").default);
       })
     }
     
@@ -471,8 +435,16 @@ const nav = getNavMenus([
     "to": "/tech"
   },
   {
+    "text": "周刊",
+    "to": "/weekly"
+  },
+  {
     "text": "生活",
     "to": "/life"
+  },
+  {
+    "text": "电子书",
+    "to": "/ebook"
   },
   {
     "text": "关于",
