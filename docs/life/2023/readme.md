@@ -6,7 +6,7 @@
 
 ### 自我提升
 - 读12本书
-  - [《JavaScript权威指南第7版》](https://www.aliyundrive.com/s/qzBMsGoaZMV)
+  - [《JavaScript权威指南》第7版](https://www.aliyundrive.com/s/qzBMsGoaZMV)
 - 源码阅读
   - Vue3
 
