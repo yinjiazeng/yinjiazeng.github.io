@@ -76,7 +76,7 @@ const routes = [
         "children": [
           {
             "ctime": 1675390364048.1646,
-            "utime": 1675394821481.863,
+            "utime": 1675647074274.0068,
             "pathname": "/life/2023/",
             "filename": "readme",
             "ext": ".md",
@@ -225,45 +225,6 @@ const routes = [
     async: (cb) => {
       require.ensure([], (require) => {
         cb(require("../../tech/uniapp常见问题汇总/readme.md").default);
-      })
-    }
-    
-          },
-          {
-            "path": "*",
-            "children": <Docfree.NotFound />
-          }
-        ]
-      },
-      {
-        "path": "*",
-        "children": <Docfree.NotFound />
-      }
-    ]
-  },
-  {
-    "path": "/weekly",
-    "children": [
-      {
-        "path": "/",
-        "pathname": "/weekly/",
-        "children": <Docfree.BlogEntry pageSize={30} />
-      },
-      {
-        "path": "/1",
-        "children": [
-          {
-            "ctime": 1675390246558.9229,
-            "utime": 1675390264129.9915,
-            "pathname": "/weekly/1/",
-            "filename": "readme",
-            "ext": ".md",
-            "title": "readme",
-            "path": "/",
-            ...require("../../weekly/1/readme.md?getTitleInfo=1").default,
-    async: (cb) => {
-      require.ensure([], (require) => {
-        cb(require("../../weekly/1/readme.md").default);
       })
     }
     
@@ -433,10 +394,6 @@ const nav = getNavMenus([
   {
     "text": "技术",
     "to": "/tech"
-  },
-  {
-    "text": "周刊",
-    "to": "/weekly"
   },
   {
     "text": "生活",
