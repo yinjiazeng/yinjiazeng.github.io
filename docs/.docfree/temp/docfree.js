@@ -43,7 +43,7 @@ const routes = [
     "children": [
       {
         "ctime": 1674269015000,
-        "utime": 1675398663596.8335,
+        "utime": 1675652579650.4705,
         "pathname": "/ebook/",
         "filename": "readme",
         "ext": ".md",
@@ -76,7 +76,7 @@ const routes = [
         "children": [
           {
             "ctime": 1675390364048.1646,
-            "utime": 1675647074274.0068,
+            "utime": 1675652658899.9902,
             "pathname": "/life/2023/",
             "filename": "readme",
             "ext": ".md",
@@ -225,6 +225,31 @@ const routes = [
     async: (cb) => {
       require.ensure([], (require) => {
         cb(require("../../tech/uniapp常见问题汇总/readme.md").default);
+      })
+    }
+    
+          },
+          {
+            "path": "*",
+            "children": <Docfree.NotFound />
+          }
+        ]
+      },
+      {
+        "path": "/执行多个promise几种实现方式",
+        "children": [
+          {
+            "ctime": 1675998717987.6445,
+            "utime": 1675998732601.8716,
+            "pathname": "/tech/执行多个promise几种实现方式/",
+            "filename": "readme",
+            "ext": ".md",
+            "title": "readme",
+            "path": "/",
+            ...require("../../tech/执行多个promise几种实现方式/readme.md?getTitleInfo=1").default,
+    async: (cb) => {
+      require.ensure([], (require) => {
+        cb(require("../../tech/执行多个promise几种实现方式/readme.md").default);
       })
     }
     
