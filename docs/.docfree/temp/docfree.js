@@ -236,11 +236,36 @@ const routes = [
         ]
       },
       {
+        "path": "/实现Promise需要几行代码",
+        "children": [
+          {
+            "ctime": 1677810523018.1672,
+            "utime": 1677827173746.1914,
+            "pathname": "/tech/实现Promise需要几行代码/",
+            "filename": "readme",
+            "ext": ".md",
+            "title": "readme",
+            "path": "/",
+            ...require("../../tech/实现Promise需要几行代码/readme.md?getTitleInfo=1").default,
+    async: (cb) => {
+      require.ensure([], (require) => {
+        cb(require("../../tech/实现Promise需要几行代码/readme.md").default);
+      })
+    }
+    
+          },
+          {
+            "path": "*",
+            "children": <Docfree.NotFound />
+          }
+        ]
+      },
+      {
         "path": "/执行多个promise几种实现方式",
         "children": [
           {
             "ctime": 1675998717987.6445,
-            "utime": 1675998732601.8716,
+            "utime": 1676014582038.149,
             "pathname": "/tech/执行多个promise几种实现方式/",
             "filename": "readme",
             "ext": ".md",
