@@ -10,4 +10,4 @@ title: 内部私有库的几种实现方案
 
 ## npm私有库
 
-有很多工具可以搭建`npm`私有库，这里推荐比较流行的[verdaccio](https://verdaccio.org/)(韦尔达奇奥)，部署简单方便。
+有很多工具可以搭建`npm`私有库，这里推荐比较流行的[verdaccio](https://verdaccio.org/)(韦尔达奇奥)，部署简单方便，使用建议搭配[nrm](https://github.com/Pana/nrm)。
