@@ -236,6 +236,31 @@ const routes = [
         ]
       },
       {
+        "path": "/内部私有库的几种实现方案",
+        "children": [
+          {
+            "ctime": 1677827469202.1511,
+            "utime": 1677828471139.817,
+            "pathname": "/tech/内部私有库的几种实现方案/",
+            "filename": "readme",
+            "ext": ".md",
+            "title": "readme",
+            "path": "/",
+            ...require("../../tech/内部私有库的几种实现方案/readme.md?getTitleInfo=1").default,
+    async: (cb) => {
+      require.ensure([], (require) => {
+        cb(require("../../tech/内部私有库的几种实现方案/readme.md").default);
+      })
+    }
+    
+          },
+          {
+            "path": "*",
+            "children": <Docfree.NotFound />
+          }
+        ]
+      },
+      {
         "path": "/实现Promise需要几行代码",
         "children": [
           {
