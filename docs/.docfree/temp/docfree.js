@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Router, Route, ShapeRoute, Nuomi, store, nuomi } from '@nuomi';
+import { Router, Route, ShapeRoute, Nuomi, globalStore, configure, router } from '@nuomi';
 import * as Docfree from 'docfree-components';
 import 'docfree-components/lib/style/lang.less';
 import footer from '../footer.js';
@@ -10,22 +10,35 @@ import footer from '../footer.js';
 const routes = [
   {
     "path": "/",
-    "pathname": "/",
+    "extends": [
+      {
+        "state": {
+          "pathname": "/"
+        }
+      }
+    ],
     "children": <Docfree.BlogEntry pageSize={30} />
   },
   {
     "path": "/about",
     "children": [
       {
-        "ctime": 1586864388295.826,
-        "utime": 1644377529095.2322,
-        "pathname": "/about/",
-        "filename": "readme",
-        "ext": ".md",
-        "title": "readme",
+        "key": 1586864388295.826,
         "path": "/",
+        "extends": [
+          {
+            "state": {
+              "ctime": 1586864388295.826,
+              "utime": 1644377529095.2322,
+              "pathname": "/about/",
+              "filename": "readme",
+              "ext": ".md",
+              "title": "readme"
+            }
+          }
+        ],
         ...require("../../about/readme.md?getTitleInfo=1").default,
-    async: (cb) => {
+    load: (cb) => {
       require.ensure([], (require) => {
         cb(require("../../about/readme.md").default);
       })
@@ -42,15 +55,22 @@ const routes = [
     "path": "/ebook",
     "children": [
       {
-        "ctime": 1674269015000,
-        "utime": 1675652579650.4705,
-        "pathname": "/ebook/",
-        "filename": "readme",
-        "ext": ".md",
-        "title": "readme",
+        "key": 1674269015000,
         "path": "/",
+        "extends": [
+          {
+            "state": {
+              "ctime": 1674269015000,
+              "utime": 1675652579650.4705,
+              "pathname": "/ebook/",
+              "filename": "readme",
+              "ext": ".md",
+              "title": "readme"
+            }
+          }
+        ],
         ...require("../../ebook/readme.md?getTitleInfo=1").default,
-    async: (cb) => {
+    load: (cb) => {
       require.ensure([], (require) => {
         cb(require("../../ebook/readme.md").default);
       })
@@ -68,22 +88,35 @@ const routes = [
     "children": [
       {
         "path": "/",
-        "pathname": "/life/",
+        "extends": [
+          {
+            "state": {
+              "pathname": "/life/"
+            }
+          }
+        ],
         "children": <Docfree.BlogEntry pageSize={30} />
       },
       {
         "path": "/2023",
         "children": [
           {
-            "ctime": 1675390364048.1646,
-            "utime": 1675652658899.9902,
-            "pathname": "/life/2023/",
-            "filename": "readme",
-            "ext": ".md",
-            "title": "readme",
+            "key": 1675390364048.1646,
             "path": "/",
+            "extends": [
+              {
+                "state": {
+                  "ctime": 1675390364048.1646,
+                  "utime": 1675652658899.9902,
+                  "pathname": "/life/2023/",
+                  "filename": "readme",
+                  "ext": ".md",
+                  "title": "readme"
+                }
+              }
+            ],
             ...require("../../life/2023/readme.md?getTitleInfo=1").default,
-    async: (cb) => {
+    load: (cb) => {
       require.ensure([], (require) => {
         cb(require("../../life/2023/readme.md").default);
       })
@@ -100,15 +133,22 @@ const routes = [
         "path": "/骑行去大理",
         "children": [
           {
-            "ctime": 1586950258282.7258,
-            "utime": 1644387752759.0925,
-            "pathname": "/life/骑行去大理/",
-            "filename": "readme",
-            "ext": ".md",
-            "title": "readme",
+            "key": 1586950258282.7258,
             "path": "/",
+            "extends": [
+              {
+                "state": {
+                  "ctime": 1586950258282.7258,
+                  "utime": 1644387752759.0925,
+                  "pathname": "/life/骑行去大理/",
+                  "filename": "readme",
+                  "ext": ".md",
+                  "title": "readme"
+                }
+              }
+            ],
             ...require("../../life/骑行去大理/readme.md?getTitleInfo=1").default,
-    async: (cb) => {
+    load: (cb) => {
       require.ensure([], (require) => {
         cb(require("../../life/骑行去大理/readme.md").default);
       })
@@ -132,22 +172,35 @@ const routes = [
     "children": [
       {
         "path": "/",
-        "pathname": "/tech/",
+        "extends": [
+          {
+            "state": {
+              "pathname": "/tech/"
+            }
+          }
+        ],
         "children": <Docfree.BlogEntry pageSize={30} />
       },
       {
         "path": "/app证书申请以及上架",
         "children": [
           {
-            "ctime": 1669878911323.7217,
-            "utime": 1669878920742.573,
-            "pathname": "/tech/app证书申请以及上架/",
-            "filename": "readme",
-            "ext": ".md",
-            "title": "readme",
+            "key": 1669878911323.7217,
             "path": "/",
+            "extends": [
+              {
+                "state": {
+                  "ctime": 1669878911323.7217,
+                  "utime": 1669878920742.573,
+                  "pathname": "/tech/app证书申请以及上架/",
+                  "filename": "readme",
+                  "ext": ".md",
+                  "title": "readme"
+                }
+              }
+            ],
             ...require("../../tech/app证书申请以及上架/readme.md?getTitleInfo=1").default,
-    async: (cb) => {
+    load: (cb) => {
       require.ensure([], (require) => {
         cb(require("../../tech/app证书申请以及上架/readme.md").default);
       })
@@ -164,15 +217,22 @@ const routes = [
         "path": "/github自动化部署静态站点",
         "children": [
           {
-            "ctime": 1644548608007.3862,
-            "utime": 1669880496414.8647,
-            "pathname": "/tech/github自动化部署静态站点/",
-            "filename": "readme",
-            "ext": ".md",
-            "title": "readme",
+            "key": 1644548608007.3862,
             "path": "/",
+            "extends": [
+              {
+                "state": {
+                  "ctime": 1644548608007.3862,
+                  "utime": 1669880496414.8647,
+                  "pathname": "/tech/github自动化部署静态站点/",
+                  "filename": "readme",
+                  "ext": ".md",
+                  "title": "readme"
+                }
+              }
+            ],
             ...require("../../tech/github自动化部署静态站点/readme.md?getTitleInfo=1").default,
-    async: (cb) => {
+    load: (cb) => {
       require.ensure([], (require) => {
         cb(require("../../tech/github自动化部署静态站点/readme.md").default);
       })
@@ -189,15 +249,22 @@ const routes = [
         "path": "/uniapp制作启动图",
         "children": [
           {
-            "ctime": 1644464436331.993,
-            "utime": 1644396575033.727,
-            "pathname": "/tech/uniapp制作启动图/",
-            "filename": "readme",
-            "ext": ".md",
-            "title": "readme",
+            "key": 1644464436331.993,
             "path": "/",
+            "extends": [
+              {
+                "state": {
+                  "ctime": 1644464436331.993,
+                  "utime": 1644396575033.727,
+                  "pathname": "/tech/uniapp制作启动图/",
+                  "filename": "readme",
+                  "ext": ".md",
+                  "title": "readme"
+                }
+              }
+            ],
             ...require("../../tech/uniapp制作启动图/readme.md?getTitleInfo=1").default,
-    async: (cb) => {
+    load: (cb) => {
       require.ensure([], (require) => {
         cb(require("../../tech/uniapp制作启动图/readme.md").default);
       })
@@ -214,15 +281,22 @@ const routes = [
         "path": "/uniapp常见问题汇总",
         "children": [
           {
-            "ctime": 1669887769245.6152,
-            "utime": 1669887776366.7422,
-            "pathname": "/tech/uniapp常见问题汇总/",
-            "filename": "readme",
-            "ext": ".md",
-            "title": "readme",
+            "key": 1669887769245.6152,
             "path": "/",
+            "extends": [
+              {
+                "state": {
+                  "ctime": 1669887769245.6152,
+                  "utime": 1669887776366.7422,
+                  "pathname": "/tech/uniapp常见问题汇总/",
+                  "filename": "readme",
+                  "ext": ".md",
+                  "title": "readme"
+                }
+              }
+            ],
             ...require("../../tech/uniapp常见问题汇总/readme.md?getTitleInfo=1").default,
-    async: (cb) => {
+    load: (cb) => {
       require.ensure([], (require) => {
         cb(require("../../tech/uniapp常见问题汇总/readme.md").default);
       })
@@ -239,15 +313,22 @@ const routes = [
         "path": "/内部私有库的几种实现方案",
         "children": [
           {
-            "ctime": 1677827469202.1511,
-            "utime": 1677828471139.817,
-            "pathname": "/tech/内部私有库的几种实现方案/",
-            "filename": "readme",
-            "ext": ".md",
-            "title": "readme",
+            "key": 1677827469202.1511,
             "path": "/",
+            "extends": [
+              {
+                "state": {
+                  "ctime": 1677827469202.1511,
+                  "utime": 1677829952150.791,
+                  "pathname": "/tech/内部私有库的几种实现方案/",
+                  "filename": "readme",
+                  "ext": ".md",
+                  "title": "readme"
+                }
+              }
+            ],
             ...require("../../tech/内部私有库的几种实现方案/readme.md?getTitleInfo=1").default,
-    async: (cb) => {
+    load: (cb) => {
       require.ensure([], (require) => {
         cb(require("../../tech/内部私有库的几种实现方案/readme.md").default);
       })
@@ -264,15 +345,22 @@ const routes = [
         "path": "/实现Promise需要几行代码",
         "children": [
           {
-            "ctime": 1677810523018.1672,
-            "utime": 1677827173746.1914,
-            "pathname": "/tech/实现Promise需要几行代码/",
-            "filename": "readme",
-            "ext": ".md",
-            "title": "readme",
+            "key": 1677810523018.1672,
             "path": "/",
+            "extends": [
+              {
+                "state": {
+                  "ctime": 1677810523018.1672,
+                  "utime": 1677827173746.1914,
+                  "pathname": "/tech/实现Promise需要几行代码/",
+                  "filename": "readme",
+                  "ext": ".md",
+                  "title": "readme"
+                }
+              }
+            ],
             ...require("../../tech/实现Promise需要几行代码/readme.md?getTitleInfo=1").default,
-    async: (cb) => {
+    load: (cb) => {
       require.ensure([], (require) => {
         cb(require("../../tech/实现Promise需要几行代码/readme.md").default);
       })
@@ -289,15 +377,22 @@ const routes = [
         "path": "/执行多个promise几种实现方式",
         "children": [
           {
-            "ctime": 1675998717987.6445,
-            "utime": 1676014582038.149,
-            "pathname": "/tech/执行多个promise几种实现方式/",
-            "filename": "readme",
-            "ext": ".md",
-            "title": "readme",
+            "key": 1675998717987.6445,
             "path": "/",
+            "extends": [
+              {
+                "state": {
+                  "ctime": 1675998717987.6445,
+                  "utime": 1676014582038.149,
+                  "pathname": "/tech/执行多个promise几种实现方式/",
+                  "filename": "readme",
+                  "ext": ".md",
+                  "title": "readme"
+                }
+              }
+            ],
             ...require("../../tech/执行多个promise几种实现方式/readme.md?getTitleInfo=1").default,
-    async: (cb) => {
+    load: (cb) => {
       require.ensure([], (require) => {
         cb(require("../../tech/执行多个promise几种实现方式/readme.md").default);
       })
@@ -322,11 +417,12 @@ const documentTitle = '前端阿牛の博客';
 const generateData = (rawData, data = []) => {
   rawData.forEach((route) => {
     if (route.path !== '*') {
-      const { children, render, effects, reducers, onInit, onChange, ...rest } = route;
+      const { state: s, extends: exts = [{}], children, path } = route;
+      const state = { ...exts[0].state, ...s, path }
       if (Array.isArray(children)) {
         data = generateData(children, data);
-      } else if (route.title) {
-        data.push(rest);
+      } else if (state.title) {
+        data.push(state);
       }
     }
   });
@@ -374,13 +470,12 @@ const getNavMenus = function(array, menus = []) {
   return menus;
 };
 
-nuomi.config({
+configure({
   state: {
     listSource: [],
   },
-  effects: {
-    initData() {
-      const nuomiProps = this.getNuomiProps();
+  action: {
+    initData({ state, commit }) {
       const {
         title,
         pathname,
@@ -390,10 +485,8 @@ nuomi.config({
         sidebarTitle,
         sidebarMenus,
         pageSidebarMenus,
-        data: routeData,
-        location,
-      } = nuomiProps;
-
+        routeData = {},
+      } = state;
       const payload = {
         sidebarTitle,
         showSidebar: !!showSidebar,
@@ -407,7 +500,7 @@ nuomi.config({
         
         if (data) {
           payload.sidebarTitle = data.title;
-          const { menus, list } = getMenus.call(nuomiProps, pre, data.menus);
+          const { menus, list } = getMenus.call(state, pre, data.menus);
           routeData.listSource = list;
           routeData.computedSidebarMenus = menus;
         } else {
@@ -420,23 +513,22 @@ nuomi.config({
 
       const listSource = getList(pathname) || [];
 
-      this.dispatch({
-        type: '_updateState',
-        payload: {
-          listSource,
-        },
+      commit({
+        listSource,
       });
 
-      store.dispatch({
-        type: 'global/_updateState',
+      globalStore.dispatch({
+        type: 'global/@update',
         payload,
       });
     }
   },
-  onInit() {
-    const { path, title, location, data } = this;
+  onInit({ store }) {
+    const location = router.location();
+    const { state } = location;
+    const { title } = store.state;
 
-    if (title && path !== '/') {
+    if (title && location.pathname !== '/') {
       document.title = title + ' | ' + documentTitle;
     } else {
       document.title = documentTitle;
@@ -445,10 +537,10 @@ nuomi.config({
     // 文章页面
     if (title) {
       // search跳转来
-      if (data.hash) {
+      if (state.hash) {
         const { hash: h } = window.location;
         setTimeout(() => {
-          window.location.hash = h + '#' + data.hash;
+          window.location.hash = h + '#' + state.hash;
         });
         return;
       }
@@ -457,11 +549,20 @@ nuomi.config({
         window.scrollTo({ top: 0 });
       }
     } else {
-      // 博客首页
-      if (path) {
-        window.scrollTo({ top: 0 });
-      }
+      window.scrollTo({ top: 0 });
     }
+  }
+});
+
+router.listener((from, to) => {
+  if (from?.pathname !== to.pathname) {
+    NProgress.start();
+  }
+}, (e) => {
+  if (!e.path.endsWith('*')) {
+    setTimeout(() => {
+      NProgress.done();
+    }, 300);
   }
 });
 
