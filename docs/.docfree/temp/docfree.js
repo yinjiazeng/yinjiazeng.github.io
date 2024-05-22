@@ -98,38 +98,6 @@ const routes = [
         "children": <Docfree.BlogEntry pageSize={30} />
       },
       {
-        "path": "/2023",
-        "children": [
-          {
-            "key": 1675390364048.1646,
-            "path": "/",
-            "extends": [
-              {
-                "state": {
-                  "ctime": 1675390364048.1646,
-                  "utime": 1675652658899.9902,
-                  "pathname": "/life/2023/",
-                  "filename": "readme",
-                  "ext": ".md",
-                  "title": "readme"
-                }
-              }
-            ],
-            ...require("../../life/2023/readme.md?getTitleInfo=1").default,
-    load: (cb) => {
-      require.ensure([], (require) => {
-        cb(require("../../life/2023/readme.md").default);
-      })
-    }
-    
-          },
-          {
-            "path": "*",
-            "children": <Docfree.NotFound />
-          }
-        ]
-      },
-      {
         "path": "/骑行去大理",
         "children": [
           {
