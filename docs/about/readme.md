@@ -2,7 +2,7 @@
 
 花名阿牛，安徽蚌埠人，92年生，已婚，目前居住在合肥。
 
-![](./.img/1.jpg)
+![](./.img/photo.jpg)
 
 ## 职业经历
 
@@ -27,11 +27,36 @@
 
 ## 主要项目
 
+import * as img from './img.js';
+
 - 春华健康科技有限公司
-  - 康保通
-    - [官网](https://kangbaotong.net/)
-    - [微信小程序](https://kangbaotong.net/)
-    - [收银结算系统](https://e.kangbaotong.net/)
+  - <a>康保通直付</a>
+    <div style={{ display: 'flex', flexWrap: 'wrap' }}>
+      {[
+        { url: img.kbt.mp, title: '小程序' },
+        { url: img.kbt.app, title: 'APP' },
+        { url: img.kbt.h5, title: 'H5' },
+      ].map(({ url, title }) => (
+        <div key={title} style={{ textAlign: 'center', marginRight: 20, marginTop: 4 }}>
+          <img src={url} style={{ width: 160, height: 160 }} />
+          <div> { title } </div>
+        </div>
+      ))}
+    </div>
+  - <a>健康权益卡</a>
+    <div style={{ display: 'flex', flexWrap: 'wrap' }}>
+      {[
+        { url: img.card.mp, title: '小程序' },
+        { url: img.card.h5, title: 'H5' },
+      ].map(({ url, title }) => (
+        <div key={title} style={{ textAlign: 'center', marginRight: 20, marginTop: 4 }}>
+          <img src={url} style={{ width: 160, height: 160 }} />
+          <div> { title } </div>
+        </div>
+      ))}
+    </div>
+  - [康保通官网](https://kangbaotong.net/)
+  - [收银结算系统](https://e.kangbaotong.net/)
   - 优健保
   - 职康云
   - 数字健康云
