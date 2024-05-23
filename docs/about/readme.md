@@ -73,3 +73,9 @@ import { Fit, Kbt, KbtBu, Card, Rights, Doctor, Ujb, Smart, Insur } from './qrco
 - [nui](https://github.com/yinjiazeng/nui) 基于jQuery封装的模块化UI框架
 - [gulp-nui](https://github.com/yinjiazeng/gulp-nui) nui打包工具
 - [nui-loader](https://github.com/yinjiazeng/gulp-nui) nui框架webpack模块解释器
+
+## 承接项目
+
+Web/H5/APP/小程序，有意者微信联系
+
+![](./.img/wechat.jpg)
