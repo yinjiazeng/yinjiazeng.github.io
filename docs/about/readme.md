@@ -59,7 +59,8 @@ import { Fit, Kbt, KbtBu, Card, Rights, Doctor, Ujb, Smart, Insur } from './qrco
   - [康保通收银结算系统](https://e.kangbaotong.net/)
   - [康保通投保单位端](https://ins.kangbaotong.net/)
   - [康保通保险公司端](https://haas.kangbaotong.net/)
-  - [职康云](https://www.zhikangyun.cn/)
+  - <a>职康云</a>（停运）
+  - <a>壹健保</a>（停运）
 - 浙江诺诺网络科技有限公司
   - [诺诺云财税](https://cloud.nuonuo.com/)
   - [诺诺电子发票](https://fp.nuonuo.com/)
