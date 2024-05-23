@@ -9,7 +9,7 @@
 - 2020.4 ~ 至今 春华健康科技有限公司
   - 前端负责人
 - 2014.3 ~ 2019.9 浙江诺诺网络科技有限公司
-  - 财税业务线前端负责人
+  - 财税业务线前端负责人 
 - 2013.3 ~ 2014.3 安徽万成达信息科技有限公司
   - PHP开发工程师 & 前端开发工程师
 
@@ -27,40 +27,34 @@
 
 ## 主要项目
 
-import * as img from './img.js';
+import { Fit, Kbt, KbtBu, Card, Rights, Doctor, Ujb, Smart, Insur } from './qrcode';
 
 - 春华健康科技有限公司
-  - <a>康保通直付</a>
-    <div style={{ display: 'flex', flexWrap: 'wrap' }}>
-      {[
-        { url: img.kbt.mp, title: '小程序' },
-        { url: img.kbt.app, title: 'APP' },
-        { url: img.kbt.h5, title: 'H5' },
-      ].map(({ url, title }) => (
-        <div key={title} style={{ textAlign: 'center', marginRight: 20, marginTop: 4 }}>
-          <img src={url} style={{ width: 160, height: 160 }} />
-          <div> { title } </div>
-        </div>
-      ))}
-    </div>
+  - <a>春华健康优选</a>
+    <Fit />
+  - [康保通](https://kangbaotong.net/)
+    <Kbt />
+  - <a>康保通商家端</a>
+    <KbtBu />
   - <a>健康权益卡</a>
-    <div style={{ display: 'flex', flexWrap: 'wrap' }}>
-      {[
-        { url: img.card.mp, title: '小程序' },
-        { url: img.card.h5, title: 'H5' },
-      ].map(({ url, title }) => (
-        <div key={title} style={{ textAlign: 'center', marginRight: 20, marginTop: 4 }}>
-          <img src={url} style={{ width: 160, height: 160 }} />
-          <div> { title } </div>
-        </div>
-      ))}
-    </div>
-  - [康保通官网](https://kangbaotong.net/)
-  - [收银结算系统](https://e.kangbaotong.net/)
-  - 优健保
-  - 职康云
-  - 数字健康云
-- 杭州诺诺网络科技有限公司
+    <Card />
+  - <a>优健保</a>
+    <Ujb />
+  - <a>优健保智选</a>
+    <Smart />
+  - <a>优健保健康险</a>
+    <Insur />
+  - <a>互联网医院用户端</a>
+    <Rights />
+  - <a>互联网医院医生端</a>
+    <Doctor />
+  - [渠道管理平台](https://reach.kangbaotong.net/)
+  - [优健保运营管理平台](https://haas.youjianbao.cc/)
+  - [康保通收银结算系统](https://e.kangbaotong.net/)
+  - [康保通投保单位端](https://ins.kangbaotong.net/)
+  - [康保通保险公司端](https://haas.kangbaotong.net/)
+  - [职康云](https://www.zhikangyun.cn/)
+- 浙江诺诺网络科技有限公司
   - [诺诺云财税](https://cloud.nuonuo.com/)
   - [诺诺电子发票](https://fp.nuonuo.com/)
   - [诺诺云办公](https://oa.nuonuo.com/)
@@ -71,7 +65,7 @@ import * as img from './img.js';
 
 ## 开源作品
 
-- [unixjs](https://github.com/unixjs/unixjs) uniapp ui components/sdk/plugins 
+- [unixjs](https://github.com/unixjs/unixjs) uniapp components/sdk/plugins 
 - [nuomi](https://github.com/nuomijs/nuomi) 基于react+redux封装的单页应用框架
 - [docfree](https://github.com/yinjiazeng/docfree) 基于webpack+nuomi开发的文档生成工具（本站基于该工具生成）
 - [nginx-gui](https://github.com/yinjiazeng/NginxGUI) 基于electron+nuomi开发的Nginx图形化管理工具
