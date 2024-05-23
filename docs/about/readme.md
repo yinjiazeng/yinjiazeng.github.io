@@ -4,15 +4,6 @@
 
 ![](./.img/photo.jpg)
 
-## 职业经历
-
-- 2020.4 ~ 至今 春华健康科技有限公司
-  - 前端负责人
-- 2014.3 ~ 2019.9 浙江诺诺网络科技有限公司
-  - 财税业务线前端负责人 
-- 2013.3 ~ 2014.3 安徽万成达信息科技有限公司
-  - PHP开发工程师 & 前端开发工程师
-
 ## 技术标签
 
 `React`
@@ -30,8 +21,18 @@
 `性能优化`
 `模块化`
 
+## 职业经历
 
-## 主要项目
+- 2021.3 ~ 至今 春华健康科技有限公司
+  - 前端负责人
+- 2020.4 ~ 2021.3 安徽寻伙科技有限公司
+  - 前端负责人
+- 2014.3 ~ 2019.9 浙江诺诺网络科技有限公司
+  - 财税业务线前端负责人 
+- 2013.3 ~ 2014.3 安徽万成达信息科技有限公司
+  - PHP开发工程师 & 前端开发工程师
+
+## 项目经历
 
 import { Fit, Kbt, KbtBu, Card, Rights, Doctor, Ujb, Smart, Insur } from './qrcode';
 
@@ -61,6 +62,11 @@ import { Fit, Kbt, KbtBu, Card, Rights, Doctor, Ujb, Smart, Insur } from './qrco
   - [康保通保险公司端](https://haas.kangbaotong.net/)
   - <a>职康云</a>（停运）
   - <a>壹健保</a>（停运）
+- 安徽寻伙科技有限公司
+  - <a>会合客户端</a>（停运）
+  - <a>会合表情开放平台</a>（停运）
+  - <a>会合运营管理平台</a>（停运）
+  - <a>会合支付中心</a>（停运）
 - 浙江诺诺网络科技有限公司
   - [诺诺云财税](https://cloud.nuonuo.com/)
   - [诺诺电子发票](https://fp.nuonuo.com/)
@@ -68,7 +74,7 @@ import { Fit, Kbt, KbtBu, Card, Rights, Doctor, Ujb, Smart, Insur } from './qrco
   - [诺诺门户](https://www.nuonuo.com/)
   - [诺诺商城](https://www.axnsc.com/)
 - 安徽万成达信息科技有限公司
-  - [好居网门户](https://haoju.cn/)
+  - [好居网门户](https://haoju.cn/)（停运）
 
 ## 开源作品
 
