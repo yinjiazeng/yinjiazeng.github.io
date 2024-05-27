@@ -556,7 +556,7 @@ const nav = getNavMenus([
     "to": "https://github.com/yinjiazeng"
   }
 ]);
-const routerType = 'hash';
+const routerType = 'browser';
 const basename = ('').replace(/^\.+|\/+$/, '') || '/';
 
 const globalState = {

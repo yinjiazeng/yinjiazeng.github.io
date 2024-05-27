@@ -4,6 +4,7 @@ module.exports = {
   title: '前端阿牛の博客',
   mode: 'blog',
   async: true,
+  type: 'browser',
   nav: [{
     text: '技术',
     to: '/tech',
