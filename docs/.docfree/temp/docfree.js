@@ -278,6 +278,38 @@ const routes = [
         ]
       },
       {
+        "path": "/windows环境git常用配置",
+        "children": [
+          {
+            "key": 1717483295746.5981,
+            "path": "/",
+            "extends": [
+              {
+                "state": {
+                  "ctime": 1717483295746.5981,
+                  "utime": 1717483310227.313,
+                  "pathname": "/tech/windows环境git常用配置/",
+                  "filename": "readme",
+                  "ext": ".md",
+                  "title": "readme"
+                }
+              }
+            ],
+            ...require("../../tech/windows环境git常用配置/readme.md?getTitleInfo=1").default,
+    load: (cb) => {
+      require.ensure([], (require) => {
+        cb(require("../../tech/windows环境git常用配置/readme.md").default);
+      })
+    }
+    
+          },
+          {
+            "path": "*",
+            "children": <Docfree.NotFound />
+          }
+        ]
+      },
+      {
         "path": "/内部私有库的几种实现方案",
         "children": [
           {
@@ -442,7 +474,7 @@ configure({
   state: {
     listSource: [],
   },
-  action: {
+  actions: {
     initData({ state, commit }) {
       const {
         title,

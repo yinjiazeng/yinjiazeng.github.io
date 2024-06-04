@@ -3157,10 +3157,10 @@ docfree-components@^0.7.1:
     docfree-utils "^0.7.0"
     prop-types "^15.7.2"
 
-docfree-generate@^0.7.2:
-  version "0.7.2"
-  resolved "https://registry.yarnpkg.com/docfree-generate/-/docfree-generate-0.7.2.tgz#63f2875a34ed21a9d002eec8a7407e4ab8c867a5"
-  integrity sha512-lN5brUxj3+tGiFdkDVjo7YWU0mb/i2n7eEB5XiF5BfjJPvZkYSPMII103DQVEkqsCK4ICa/ceVC7WQbGPFtQTg==
+docfree-generate@^0.7.3:
+  version "0.7.3"
+  resolved "https://registry.npmjs.org/docfree-generate/-/docfree-generate-0.7.3.tgz#fe1a1a361030c446f02fbd9fd735d271724d8e2f"
+  integrity sha512-aX4VvHu8Zf1YEWUMpibpQJqaBNGhJbURp5ZWQsuN+XZMgKTX2g4TQW8Ly9MAcYOaBFVU9TIUb0XRQeUy8Lv3mQ==
   dependencies:
     chokidar "^3.3.1"
     docfree-utils "^0.7.0"
@@ -3219,10 +3219,10 @@ docfree-utils@^0.7.0:
     unist-util-visit "^2.0.2"
     vfile "^4.1.0"
 
-docfree-webpack@^0.7.1:
-  version "0.7.1"
-  resolved "https://registry.yarnpkg.com/docfree-webpack/-/docfree-webpack-0.7.1.tgz#32e3f26a8fae42395bb01a0f4e091ece6dd5e239"
-  integrity sha512-z0ty63xjALEigXqjj8X9FUY1HN7jUApJIQsg5qMjCdeuadr4/jdzDjbhT2F2V/IyDZgvJaEhWbLWuTBPRnwrFg==
+docfree-webpack@^0.7.3:
+  version "0.7.3"
+  resolved "https://registry.npmjs.org/docfree-webpack/-/docfree-webpack-0.7.3.tgz#de35ac9ab9c25ce88bb2386fb6aeedac64145995"
+  integrity sha512-fRXvK3UVHEkjBdWFW7fa8tYALIyGTYXEnnFBKk0QeuSQhVFt6G3NI49aAHToSoqtR8CryxgsfnxsRkVHYmLG8Q==
   dependencies:
     "@babel/polyfill" "^7.8.7"
     antd "3.x"
@@ -3245,7 +3245,7 @@ docfree-webpack@^0.7.1:
     less "^3.11.1"
     less-loader "^5.0.0"
     mini-css-extract-plugin "^0.9.0"
-    nuomi "^1.1.1"
+    nuomi "^1.2.0"
     optimize-css-assets-webpack-plugin "^5.0.3"
     portfinder "^1.0.25"
     postcss-loader "^3.0.0"
@@ -3259,16 +3259,16 @@ docfree-webpack@^0.7.1:
     webpack-dev-server "^3.10.3"
     webpack-merge "^4.2.2"
 
-docfree@^0.7.2:
-  version "0.7.2"
-  resolved "https://registry.yarnpkg.com/docfree/-/docfree-0.7.2.tgz#fc3b26f15170e2e974ab69b27dd1d7ace0caae5e"
-  integrity sha512-XyR9ymreMck4L2T6fQuzBQ8sbfl/yhjd4RJPCV7v3kilFQ6pH8Bk8sjQJbhhtcjdgA3i6y9mlb6fEzLbV0rCoA==
+docfree@^0.7.5:
+  version "0.7.5"
+  resolved "https://registry.npmjs.org/docfree/-/docfree-0.7.5.tgz#8fbd768d5db5839f440dca652332ac2853e09063"
+  integrity sha512-JVdh8VJ8Cw/dmEvXtsUQxx12AyK/Dd3ZUsW+igPPx7j4prdfdz2b3T6bqfVF+V91nuQKxYijxfjmFb8hfqtyHw==
   dependencies:
     commander "^4.1.1"
-    docfree-generate "^0.7.2"
+    docfree-generate "^0.7.3"
     docfree-template "^0.7.0"
     docfree-utils "^0.7.0"
-    docfree-webpack "^0.7.1"
+    docfree-webpack "^0.7.3"
 
 dom-align@^1.7.0:
   version "1.11.1"
@@ -5990,10 +5990,10 @@ number-is-nan@^1.0.0:
   resolved "https://registry.yarnpkg.com/number-is-nan/-/number-is-nan-1.0.1.tgz#097b602b53422a522c1afb8790318336941a011d"
   integrity sha1-CXtgK1NCKlIsGvuHkDGDNpQaAR0=
 
-nuomi@^1.1.1:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/nuomi/-/nuomi-1.1.1.tgz#057a27ae8efe65aa542b4d795661d1ffb1338a3d"
-  integrity sha512-7UppT2fsSbesfi5c2MZoSPWfWYj6bpD5An8jY4SwFQOUAo83oPglLMUeO7+sheZtjo7GAgC7nMRMetDHqyDpmQ==
+nuomi@^1.2.0:
+  version "1.2.1"
+  resolved "https://registry.npmjs.org/nuomi/-/nuomi-1.2.1.tgz#829f8d2dc94eb3d42bf469a705dd7cab72c57740"
+  integrity sha512-RPIs3CC6HfSx3Xzqh56a1VRmjBCGsHY4AXMqbvSPTC6h6utq+dzT4HdfkBkyKNUa7dPgpLN4n7Gz4UzWQOH8jA==
   dependencies:
     invariant "^2.2.4"
     prop-types "^15.7.2"
