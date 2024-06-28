@@ -246,7 +246,7 @@ const routes = [
         ]
       },
       {
-        "path": "/uniapp常见问题汇总",
+        "path": "/uniapp问题汇总",
         "children": [
           {
             "key": 1669887769245.6152,
@@ -255,18 +255,18 @@ const routes = [
               {
                 "state": {
                   "ctime": 1669887769245.6152,
-                  "utime": 1669887776366.7422,
-                  "pathname": "/tech/uniapp常见问题汇总/",
+                  "utime": 1719499861670.6697,
+                  "pathname": "/tech/uniapp问题汇总/",
                   "filename": "readme",
                   "ext": ".md",
                   "title": "readme"
                 }
               }
             ],
-            ...require("../../tech/uniapp常见问题汇总/readme.md?getTitleInfo=1").default,
+            ...require("../../tech/uniapp问题汇总/readme.md?getTitleInfo=1").default,
     load: (cb) => {
       require.ensure([], (require) => {
-        cb(require("../../tech/uniapp常见问题汇总/readme.md").default);
+        cb(require("../../tech/uniapp问题汇总/readme.md").default);
       })
     }
     
